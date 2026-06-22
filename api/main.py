@@ -4,6 +4,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import os
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "" 
 
 # initializare applicatie
 app = FastAPI(
@@ -26,7 +27,7 @@ model     = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
 model.eval()
 print("Model incarcat cu succes!")
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 model  = model.to(device)
 
 
