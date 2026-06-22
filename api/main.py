@@ -14,10 +14,11 @@ app = FastAPI(
 
 
 # incarca modelul
-MODEL_PATH = os.path.join(
-    os.path.dirname(__file__),
-    "..", "model", "model_disertatie_v2"
-)
+# MODEL_PATH = os.path.join(
+#     os.path.dirname(__file__),
+#     "..", "model", "model_disertatie_v2"
+# )
+MODEL_PATH = "madaluna83/sentiment-distilbert-imdb"
 
 print(f"Se incarca modelul din: {MODEL_PATH}")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
