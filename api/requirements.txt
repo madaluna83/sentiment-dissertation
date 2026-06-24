@@ -1,6 +1,7 @@
 fastapi
 uvicorn
+torch
 transformers
 huggingface-hub
 numpy
-torch --extra-index-url https://download.pytorch.org/whl/cpu
+pydantic
