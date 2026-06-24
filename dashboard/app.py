@@ -20,7 +20,8 @@ st.set_page_config(
 )
 
 
-API_URL = "http://127.0.0.1:8000"
+#API_URL = "http://127.0.0.1:8000"
+API_URL = "https://madaluna83-sentiment-api.hf.space"
 DB_PATH  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "history.db")
 HISTORY_FILE = "dashboard/history.json"
 
